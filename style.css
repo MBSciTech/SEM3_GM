@@ -3,6 +3,10 @@
 root{
     --themeColor:yellow;
 }
+
+body{
+    overflow-x: hidden;
+}
 .navbar{
     background-color: yellow;
 }
@@ -33,3 +37,33 @@ root{
 .navbar .container-fluid form input[type="search"]{
     color:white;
 }
+.container .buleting {
+    display: inline-block;
+    transition: all 5s ease-in-out;
+    width: 2700px;
+    animation: buleting ease-in-out 25s infinite; 
+}
+
+@keyframes buleting {
+    from {
+        transform: translateX(0px); 
+    }
+    to {
+        transform: translateX(-2750px); 
+    }
+}
+
+
+
+.container .buleting img{
+    float: left;
+    margin-top: 3px;
+    margin-right: 10px;
+
+}
+.container .buleting p{
+    float: left;
+    margin-right: 10px;
+
+}
+
